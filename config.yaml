@@ -1,25 +1,9 @@
-default_chain: stride-testnet
 chains:
-  gaia-testnet:
-    key: keepit
-    chain-id: GAIA
-    rpc-addr: http://65.108.80.183:23657      # use your own GAIA RPC endpoint here
-    grpc-addr: http://65.108.80.183:23090     # use your own GAIA GRPC endpoint here
-    account-prefix: cosmos
-    keyring-backend: test
-    gas-adjustment: 1.2
-    gas-prices: 0.001uatom
-    key-directory: /root/.icq/keys
-    debug: false
-    timeout: 20s
-    block-timeout: ""
-    output-format: json
-    sign-mode: direct
   stride-testnet:
-    key: welovegaming
+    key: ashtray
     chain-id: STRIDE-TESTNET-4
-    rpc-addr: http://127.0.0.1:26657      # use your own Stride GRPC endpoint here
-    grpc-addr: http://0.0.0.0:9090     # use your own Stride GRPC endpoint here
+    rpc-addr: http://38.242.145.121:26657      
+    grpc-addr: http://38.242.145.121:9090     
     account-prefix: stride
     keyring-backend: test
     gas-adjustment: 1.2
@@ -30,4 +14,20 @@ chains:
     block-timeout: ""
     output-format: json
     sign-mode: direct
+  gaia-testnet:
+    key: ashtray
+    chain-id: GAIA
+    rpc-addr: http://139.162.201.188:23657       
+    grpc-addr: http://139.162.201.188:23090     
+    account-prefix: cosmos
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.001uatom
+    key-directory: /root/.icq/keys
+    debug: false
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
 cl: {}
+EOF
